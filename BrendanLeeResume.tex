@@ -1,0 +1,182 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Brendan N. Lee} \\ \vspace{1pt}
+    \small 973-879-0926 $|$ \href{mailto:x@x.com}{\underline{bnlee1030@gmail.com}} $|$ 
+    \small{{www.linkedin.com/in/brendannlee}}
+\end{center}
+
+
+
+ 
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Financial Research and Product Development Analyst}{July 2022 -- Present}
+      {CME Group}{New York, NY}
+      \resumeItemListStart
+        \resumeItem{Conducts market analysis and provides insight on market trends and client needs to inform product development and strategy}
+        \resumeItem{Collaborates with cross-functional teams, including sales, marketing, and operations, to support the successful launch and growth of new interest rates derivative products such as Treasury, reference rate, and mortgage futures}
+        \resumeItem{Performs data cleaning and manipulation techniques using R and other programming languages in order to quickly source data and streamline tasks}
+        \resumeItem{Maintains product suite to support the company's long-term growth and success through unprecedented rates environment}
+        \resumeItem{Manages the research processes and identified opportunities for automation to improve efficiency and effectiveness within the Research and Product Development team}
+        \resumeItem{Streamlined process of determining Treasury deliverable basket by automating the calculation process of conversion factors}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Financial Research and Product Development Intern}{May 2021 -- May 2022}
+      {CME Group}{New York, NY}
+      \resumeItemListStart
+        \resumeItem{Designed and developed a data visualization tool in R that streamlined data analysis and content creation}
+        \resumeItem{Participated in product review and improvement processes to ensure ongoing product relevance and value to clients}
+        \resumeItem{Created and maintained product performance metrics to track and report on product growth and success}
+        \resumeItem{Authored technical papers, presentations, and other content to educate clients about new interest rate offerings and their mechanics}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Academic Projects}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+      {Project Consulting}{August 2021 --  May 2022}
+      {Senior Thesis Project}{Hoboken, NJ}
+          \resumeItemListStart
+            \resumeItem{\textbf{Problem}: The Student Development and Alumni Engagement Office at Stevens Institute of Technology was noticing a decrease in donations from younger alumni, likely due to the antiquated donation portal}
+             \resumeItem{\textbf{Solution}: Implemented new digital payments methods such as Venmo and Paypal that quickens and eases the donation process}
+            \resumeItem{\textbf{Outcome}: New donation vendor led to increased donations across all demographics during the University's day of giving, leading to a total donation sum of \$319,680 for the event}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Stevens Institute of Technology}{}
+      {Bachelor of Science in Quantitative Finance}{}
+      \resumeItemListStart
+        \resumeItem{GPA: 3.9}
+        \resumeItem{Awards: Summa Cum Laude, Presidential Scholarship, Dean's List all semesters}
+        \resumeItem{Coursework: Data Structures, Algorithms, Risk Management, Econometrics, Advanced Time Series and Machine Learning, Fixed Income, Derivatives, Financial Market Microstructure \& Trading Strategies}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+%-----------Technical SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming}{: R, Python, SQL, HTML, CSS} \\
+     \textbf{Software}{: Bloomberg, Tableau, Microsoft Office (Advanced Excel), Anaconda} \\
+     \textbf{Libraries and Frameworks}{: pandas, NumPy, Matplotlib, scikit-learn}
+    }}
+ \end{itemize}
+%-------------------------------------------
+
+%-----------Interests-----------
+\section{Interests}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Creative}{: Classical and Jazz Piano, Reading, Movies, Puzzles, Portrait Drawing} \\
+    \textbf{Physical}{: Skiing, Snowboarding, Backpacking} \\
+    }}
+ \end{itemize}
+%-------------------------------------------
+\end{document}
